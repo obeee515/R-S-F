@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونتي الشخصية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- الأعلام في الزوايا -->
+        <div class="flag left-flag"></div>
+        <div class="flag right-flag"></div>
+
+        <div class="header">
+            <h1>بسم الله الرحمن الرحيم</h1>
+            <h2>جمهورية السودان</h2>
+            <h3>وزارة الدفاع</h3>
+            <h4>القوات المسلحة السودانية</h4>
+            <h5>قوات العمل الخاص</h5>
+        </div>
+
+        <div class="login-box">
+            <h2>تسجيل الدخول</h2>
+            <form id="login-form">
+                <label for="email">البريد الإلكتروني أو الرقم:</label>
+                <input type="text" id="email" name="email" placeholder="أدخل البريد الإلكتروني أو الرقم" required>
+
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </div>
+
+        <div id="permission-request" class="permission-request">
+            <h3>من فضلك، قم بالسماح بالوصول إلى الصور والمقاطع</h3>
+            <button onclick="grantAccess()">تم</button>
+        </div>
+
+        <!-- الصور المخفية التي ستظهر بعد منح الصلاحية -->
+        <div id="protected-images" class="protected-images">
+            <h3>الصور المحمية:</h3>
+            <img src="image1.jpg" alt="صورة 1" class="image">
+            <img src="image2.jpg" alt="صورة 2" class="image">
+        </div>
+
+        <!-- حقوق الملكية أسفل الصفحة -->
+        <footer>
+            <p>حقوق الملكية: obeee515</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
